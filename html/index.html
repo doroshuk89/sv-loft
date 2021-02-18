@@ -1,3 +1,19 @@
+               <?php 
+               define('ROOT', $_SERVER['DOCUMENT_ROOT']);
+               $gallery_file = ROOT.'/scripts/projects-loft.json';
+               if (file_exists($gallery_file))
+               {
+               			$gallery = file_get_contents($gallery_file);
+               			print_r($gallery);
+               			$option = json_decode($gallery, true);
+               			print_r($option);
+               			foreach($option as $key){
+               			if(isset($key->name)){
+               				echo $key->name;
+               			}
+               		}
+           		}
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
