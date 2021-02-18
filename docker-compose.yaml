@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+
+  web-server:
+    image: php:8.0.2-apache
+    restart: always
+    container_name: loft-sv    
+    ports:
+      - 8120:80
+    volumes:
+      - ./html/:/var/www/html
+    
