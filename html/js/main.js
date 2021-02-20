@@ -368,4 +368,55 @@ $('.wrap-form-reservation').on('submit', function (e) {
         })
     }
 
+//Jquery LightGallery 
+$('.click-full-image').on('click', function(e) {
+    e.preventDefault();
+    var img_links = [];
+    $(this).closest('.wrap-gallery').find('.item-gallery').each(function () {
+            if($(this).css('display') != 'none'){
+                let thumb = $(this).children('img').attr('src');
+                $(this).find('.overlay-item-gallery a').each(function(){
+                    if($(this).data('href')) {
+                        let title = $(this).data('title');
+                        if(!title){
+                            title = 'Мебель в стиле ЛОФТ';
+                        }
+                        var arr = new Map([
+                                ['img_full', $(this).data('href')],
+                                ['img_thumb', thumb],
+                                ['title', '<h4>'+title+'</h4>']
+                              ]);  
+                        img_links.push(arr);
+                    }
+                });
+            }
+    })
+        /*Dymanic load*/
+        let data =[];
+        $.each(img_links, function (index, value){
+            data.push(
+                            {
+                                "src": value.get('img_full'),
+                                'thumb': value.get('img_thumb'),
+                                'subHtml': value.get('title')
+                            }   
+                    );
+        })
+       
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: data
+        })
+})
+
+//Jquery LightGallery  for project success
+$('.click-project-loft').on('click', function(e) {
+    e.preventDefault();
+    var img_links = [];
+    $(this).closest('.gallery-case').find('.gallery-case').each(function () {
+            let thumb = $(this).children('.images-thumbnails a').data('href');
+            console.log(thumb);
+    });
+});
+
 })(jQuery);

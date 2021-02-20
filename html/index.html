@@ -1,18 +1,6 @@
-               <?php 
-               define('ROOT', $_SERVER['DOCUMENT_ROOT']);
-               $gallery_file = ROOT.'/scripts/projects-loft.json';
-               if (file_exists($gallery_file))
-               {
-               			$gallery = file_get_contents($gallery_file);
-               			print_r($gallery);
-               			$option = json_decode($gallery, true);
-               			print_r($option);
-               			foreach($option as $key){
-               			if(isset($key->name)){
-               				echo $key->name;
-               			}
-               		}
-           		}
+<?php 
+    //Подключаем вывод галереи на сайте
+    require_once 'scripts/galleryPhoto.php'; 
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -37,6 +25,9 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+        
+        <!-- JqueryLightGallery -->
+        <link rel="stylesheet" href="css/lightgallery.min.css">
 
 	<link rel="icon shortcut" type="image/ico" href="img/favicon/favicon.ico"/>
 <!--===============================================================================================-->
@@ -527,7 +518,7 @@
 					<img src="img/1.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search" href="img/1.jpg" data-lightbox="gallery"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/1.jpg" data-title="Современный стелаж"></a>
 					</div>
 				</div>
 
@@ -536,7 +527,7 @@
 					<img src="img/sg_1.jpeg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search" href="img/sg_1.jpeg" data-lightbox="gallery"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/sg_1.jpeg" ></a>
 					</div>
 				</div>
 
@@ -545,7 +536,7 @@
 					<img src="img/sg_2.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search" href="img/sg_2.jpg" data-lightbox="gallery"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/sg_2.jpg" ></a>
 					</div>
 				</div>
 
@@ -554,7 +545,7 @@
 					<img src="img/b_1.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search" href="img/b_1.jpg" data-lightbox="gallery"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/b_1.jpg"></a>
 					</div>
 				</div>
 
@@ -563,7 +554,7 @@
 					<img src="img/b_2.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search" href="img/b_2.jpg" data-lightbox="gallery"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/b_2.jpg" ></a>
 					</div>
 				</div>
 
@@ -572,7 +563,7 @@
 					<img src="img/b_3.jpeg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search" href="img/b_3.jpeg" data-lightbox="gallery"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/b_3.jpeg" ></a>
 					</div>
 				</div>
 
@@ -581,7 +572,7 @@
 					<img src="img/sg_3.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search" href="img/sg_3.jpg" data-lightbox="gallery"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/sg_3.jpg" ></a>
 					</div>
 				</div>
 
@@ -590,7 +581,7 @@
 					<img src="img/s1.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search" href="img/s1.jpg" data-lightbox="gallery"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/s1.jpg"></a>
 					</div>
 				</div>
 
@@ -599,14 +590,14 @@
 					<img src="img/stol.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search" href="img/stol.jpg" data-lightbox="gallery"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/stol.jpg"></a>
 					</div>
 				</div>
 				<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom stul">
 					<img src="img/st1.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search" href="img/st1.jpg" data-lightbox="gallery"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/st1.jpg" ></a>
 					</div>
 				</div>
 
@@ -615,7 +606,7 @@
 					<img src="img/st2.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search" href="img/st2.jpg" data-lightbox="gallery"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/st2.jpg" ></a>
 					</div>
 				</div>
 
@@ -624,7 +615,7 @@
 					<img src="img/st3.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search" href="img/st3.jpg" data-lightbox="gallery"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/st3.jpg" ></a>
 					</div>
 				</div>
 			</div>
@@ -847,67 +838,34 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-4 p-t-30">
-
+                            <?php foreach ($data as $item) {?>
+                                <div class="col-md-4 p-t-30 block-projects">
 					<!-- Block1 -->
 					<div class="blo1 gallery-case">
 						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative ">
-							<a href="img/case/1.jpeg"  data-title="Барная стойка"  data-lightbox="gallery-case">
-								<img src="img/case/1-th.jpeg" alt="IMG-INTRO">
+                                                    <div class="images-thumbnails">
+                                                        <a class ="click-project-loft" data-href="<?php echo $item->img_prev;?>"  data-title="<?php echo $item->name;?>">
+								<img src="<?php echo $item->img_prev;?>" alt="IMG-INTRO">
 							</a>
-							<div class="time-blog">
-								$ 360
-							</div>
+                                                    </div>
+                                                    <div class="list-images-fullsize">
+                                                        <?php foreach ($item->img_list as $images) {?>
+                                                            <a data-href="<?php echo $images->img_full;?>"></a>
+                                                        <?} ?>
+                                                    </div>
+                                                    <div class="time-blog">
+								<?php echo $item->price;?>
+                                                    </div>
 						</div>
 
 						<div class="wrap-text-blo1 p-t-35 text-center">
 							<h4 class="txt5 color0-hov trans-0-4 m-b-13">
-								Барная стойка с подсветкой
+								<?php echo $item->name;?>
 							</h4>
 						</div>
 					</div>
 				</div>
-
-				<div class="col-md-4 p-t-30">
-					<!-- Block1 -->
-					<div class="blo1">
-						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
-							<a href="img/case/2.jpeg" data-title="Офисный стол для руководителя" data-lightbox="gallery-case">
-								<img src="img/case/2-th.jpeg" alt="IMG-INTRO">
-							</a>
-							<div class="time-blog">
-								$ 460
-							</div>
-						</div>
-
-						<div class="wrap-text-blo1 p-t-35 text-center">
-							<h4 class="txt5 color0-hov trans-0-4 m-b-13">
-								Офисный стол для руководителя
-							</h4>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 p-t-30">
-					<!-- Block1 -->
-					<div class="blo1">
-						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
-							<a href="img/case/3.jpeg" data-title="Барные стулья" data-lightbox="gallery-case">
-								<img src="img/case/3-th.jpeg" alt="IMG-INTRO">
-							</a>
-							<div class="time-blog">
-								$ 80
-							</div>
-						</div>
-
-						<div class="wrap-text-blo1 p-t-35 text-center">
-							<h4 class="txt5 color0-hov trans-0-4 m-b-13">
-								Барные стулья
-							</h4>
-						</div>
-					</div>
-				</div>
-
+                            <?} ?>
 			</div>
 		</div>
 	</section>
@@ -1399,6 +1357,11 @@
 <!--===============================================================================================-->
 	<script src="//code-ya.jivosite.com/widget/JoMOB48x1T" async></script>
 <!--===============================================================================================-->
+        <!-- JqueryLightGallery -->
+        <script type="text/javascript" src="js/lightgallery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/lg-fullscreen.min.js"></script>
+        <script type="text/javascript" src="js/lg-thumbnail.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

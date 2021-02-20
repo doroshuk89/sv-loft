@@ -10,4 +10,6 @@ return array(
     'Respect\\Validation\\' => array($vendorDir . '/respect/validation/library'),
     'Respect\\Stringifier\\' => array($vendorDir . '/respect/stringifier/src'),
     'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
+    'MyClasses\\' => array($baseDir . '/scripts/Classes'),
+    'CustomException\\' => array($baseDir . '/scripts/Classes/Exception'),
 );

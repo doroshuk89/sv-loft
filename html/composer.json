@@ -10,5 +10,11 @@
             "name": "Atlas",
             "email": "doroshuk33@yandex.by"
         }
-    ]
+    ],
+    "autoload": {
+        	"psr-4": {
+                            "MyClasses\\": "scripts/Classes",
+                            "CustomException\\":  "scripts/Classes/Exception"
+                	}
+       }
 }

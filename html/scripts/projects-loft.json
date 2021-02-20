@@ -1,7 +1,7 @@
 [
 	{
     			"name":	"Барная стойка с подсветкой",
-    			"img_prev": "img/case/1.jpeg",
+    			"img_prev": "img/case/1-th.jpeg",
     			"price": "$ 460",
     			"img_list" : 	[
     								{"img_full": "img/case/1.jpeg"},
@@ -11,7 +11,7 @@
 	},
 	{
     			"name":	"Офисный стол для руководителя",
-    			"img_prev": "img/case/2.jpeg",
+    			"img_prev": "img/case/2-th.jpeg",
     			"price": "$ 460",
     			"img_list" : 	[
     								{"img_full": "img/case/2.jpeg"},
@@ -21,7 +21,27 @@
 	},
 	{
     			"name":	"Барные стулья",
-    			"img_prev": "img/case/3.jpeg",
+    			"img_prev": "img/case/3-th.jpeg",
+    			"price": "$ 80",
+    			"img_list" : 	[
+    								{"img_full": "img/case/3.jpeg"},
+    								{"img_full": "img/case/3.jpeg"},
+    								{"img_full": "img/case/3.jpeg"}
+    							]
+	},
+        {
+    			"name":	"Барные стулья",
+    			"img_prev": "img/case/3-th.jpeg",
+    			"price": "$ 80",
+    			"img_list" : 	[
+    								{"img_full": "img/case/3.jpeg"},
+    								{"img_full": "img/case/3.jpeg"},
+    								{"img_full": "img/case/3.jpeg"}
+    							]
+	},
+        {
+    			"name":	"Барные стулья",
+    			"img_prev": "img/case/3-th.jpeg",
     			"price": "$ 80",
     			"img_list" : 	[
     								{"img_full": "img/case/3.jpeg"},
