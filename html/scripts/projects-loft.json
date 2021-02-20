@@ -2,7 +2,7 @@
 	{
     			"name":	"Барная стойка с подсветкой",
     			"img_prev": "img/case/1-th.jpeg",
-    			"price": "$ 460",
+    			"price": "$ 600",
     			"img_list" : 	[
     								{"img_full": "img/case/1.jpeg"},
     								{"img_full": "img/case/1.jpeg"},
@@ -20,26 +20,6 @@
     							]
 	},
 	{
-    			"name":	"Барные стулья",
-    			"img_prev": "img/case/3-th.jpeg",
-    			"price": "$ 80",
-    			"img_list" : 	[
-    								{"img_full": "img/case/3.jpeg"},
-    								{"img_full": "img/case/3.jpeg"},
-    								{"img_full": "img/case/3.jpeg"}
-    							]
-	},
-        {
-    			"name":	"Барные стулья",
-    			"img_prev": "img/case/3-th.jpeg",
-    			"price": "$ 80",
-    			"img_list" : 	[
-    								{"img_full": "img/case/3.jpeg"},
-    								{"img_full": "img/case/3.jpeg"},
-    								{"img_full": "img/case/3.jpeg"}
-    							]
-	},
-        {
     			"name":	"Барные стулья",
     			"img_prev": "img/case/3-th.jpeg",
     			"price": "$ 80",
