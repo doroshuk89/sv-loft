@@ -376,7 +376,15 @@ $('.wrap-gallery-footer, .wrap-gallery-sidebar').lightGallery({
 $('.click-full-image').on('click', function(e) {
     e.preventDefault();
     var img_links = [];
-    $(this).closest('.wrap-gallery').find('.item-gallery').each(function () {
+    
+    var arr = new Map([
+                                ['img_full', $(this).data('href')],
+                                ['img_thumb',$(this).closest('.item-gallery').find('img').attr('src')],
+                                ['title', '<h4>Мебель в стиле ЛОФТ</h4>']
+                      ]); 
+    img_links.push(arr);
+    var current = $(this).closest('.item-gallery');
+    $(this).closest('.wrap-gallery').find('.item-gallery').not(current).each(function () {
             if($(this).css('display') != 'none'){
                 let thumb = $(this).children('img').attr('src');
                 $(this).find('.overlay-item-gallery a').each(function(){
@@ -385,7 +393,7 @@ $('.click-full-image').on('click', function(e) {
                         if(!title){
                             title = 'Мебель в стиле ЛОФТ';
                         }
-                        var arr = new Map([
+                        var arr =  new Map([
                                 ['img_full', $(this).data('href')],
                                 ['img_thumb', thumb],
                                 ['title', '<h4>'+title+'</h4>']
