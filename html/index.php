@@ -1351,10 +1351,10 @@
 	<script src="vendor/isotope/isotope.pkgd.min.js"></script>
 <!--===============================================================================================-->
 <!-- JqueryLightGallery -->
-        <script type="text/javascript" src="js/lightgallery.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
-        <script type="text/javascript" src="js/lg-fullscreen.min.js"></script>
-        <script type="text/javascript" src="js/lg-thumbnail.min.js"></script>
+        <script  src="js/lightgallery.min.js"></script>
+        <script  src="js/jquery.mousewheel.min.js"></script>
+        <script  src="js/lg-fullscreen.min.js"></script>
+        <script  src="js/lg-thumbnail.min.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.min.js"></script>
 </body>
