@@ -1357,5 +1357,6 @@
         <script  src="js/lg-thumbnail.min.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.min.js"></script>
+        <script src="//code-ya.jivosite.com/widget/IZ8GFjW5Ok" async></script>
 </body>
 </html>
