@@ -359,7 +359,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-6 p-b-30">
+				<div class="col-md-6  p-b-30">
 					<div class="wrap-pic-delicious size2 bo-rad-10 hov-img-zoom m-l-r-auto">
 						<img src="img/loft-office.jpg" alt="IMG-OUR">
 					</div>
@@ -369,13 +369,13 @@
 
 			<!-- Romantic -->
 			<div class="row p-t-105 p-b-105">
-				<div class="col-md-6 p-b-30">
+				<div class="col-md-6 p-b-30 order-md-1 order-lg-1 order-xl-1 order-2">
 					<div class="wrap-pic-romantic size2 bo-rad-10 hov-img-zoom m-l-r-auto">
 						<img src="img/loft-bar.jpg" alt="IMG-OUR">
 					</div>
 				</div>
 
-				<div class="col-md-6 p-t-45 p-b-30">
+				<div class="col-md-6 p-t-45 p-b-30 order-md-2 order-lg-2 order-xl-2 order-1">
 					<div class="wrap-text-romantic t-center">
 						<span class="tit2 t-center">
 							Bar
@@ -386,7 +386,7 @@
 						</h3>
 
 						<p class="t-center m-b-22 size3 m-l-r-auto">
-							сделайте узнаваемым ресторан, отель, бар.
+							Cделайте узнаваемым ресторан, отель, бар.
 							Мебель, изготовленная у нас, создаст уютную атмосферу для посетителей, позволит подчеркнуть ваш стиль
 						</p>
 					</div>
@@ -702,7 +702,7 @@
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
 								<div class="price-item-mainmenu txt22">
-									$40
+									$30
 								</div>
 							</div>
 
@@ -721,12 +721,12 @@
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
 								<div class="price-item-mainmenu txt22">
-									$120
+									$50
 								</div>
 							</div>
 
 							<span class="info-item-mainmenu txt23">
-								В офис, на кухну, для ПК
+								В офис, на кухню, для ПК
 							</span>
 						</div>
 
@@ -740,7 +740,7 @@
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
 								<div class="price-item-mainmenu txt22">
-									$90
+									$45
 								</div>
 							</div>
 
@@ -759,7 +759,7 @@
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
 								<div class="price-item-mainmenu txt22">
-									$200
+									$140
 								</div>
 							</div>
 
@@ -778,7 +778,7 @@
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
 								<div class="price-item-mainmenu txt22">
-									$75
+									$40
 								</div>
 							</div>
 
@@ -797,7 +797,7 @@
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
 								<div class="price-item-mainmenu txt22">
-									$25
+									$20
 								</div>
 							</div>
 
