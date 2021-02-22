@@ -1685,3 +1685,22 @@ body {padding-right: 0px !important;}
 .msg-error {
     color: #d41b22 ;
 }
+.images-thumbnails {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+.images-thumbnails img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 767px){
+  .images-thumbnails {
+      height: 100%;
+      max-height: 450px;
+  }
+}
+span.click-project-loft {
+  cursor: pointer;
+}

@@ -2,7 +2,7 @@
 	{
     			"name":	"Барная стойка с подсветкой",
     			"img_prev": "img/case/1-th.jpeg",
-    			"price": "$ 600",
+    			"price": "$ 250",
     			"img_list" : 	[
     								{"img_full": "img/case/1.jpeg"},
     								{"img_full": "img/case/1.jpeg"},
@@ -22,11 +22,33 @@
 	{
     			"name":	"Барные стулья",
     			"img_prev": "img/case/3-th.jpeg",
-    			"price": "$ 80",
+    			"price": "$ 40",
     			"img_list" : 	[
     								{"img_full": "img/case/3.jpeg"},
     								{"img_full": "img/case/3.jpeg"},
     								{"img_full": "img/case/3.jpeg"}
     							]
-	}
+	},
+    {
+                "name": "Кофейный столик",
+                "img_prev": "loft_projects/coffe_stol/thumb.jpeg",
+                "price": "$ 35",
+                "img_list" :    [
+                                    {"img_full": "loft_projects/coffe_stol/1.jpeg"},
+                                    {"img_full": "loft_projects/coffe_stol/2.jpeg"},
+                                    {"img_full": "loft_projects/coffe_stol/3.jpeg"},
+                                    {"img_full": "loft_projects/coffe_stol/4.jpeg"},
+                                    {"img_full": "loft_projects/coffe_stol/5.jpeg"}
+                                ]
+    },
+    {
+                "name": "Стол обеденный LOFT",
+                "img_prev": "loft_projects/loft_stol/thumb.jpeg",
+                "price": "$ 40",
+                "img_list" :    [
+                                    {"img_full": "loft_projects/loft_stol/1.jpeg"},
+                                    {"img_full": "loft_projects/loft_stol/2.jpeg"},
+                                    {"img_full": "loft_projects/loft_stol/3.jpeg"}
+                                ]
+    }
 ]

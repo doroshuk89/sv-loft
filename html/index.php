@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
         
         <!-- JqueryLightGallery -->
         <link rel="stylesheet" href="css/lightgallery.min.css">
@@ -57,11 +57,8 @@
 								<li>
 									<a href="#gallery">Каталог</a>
 								</li>
-
-
-
 								<li>
-									<a href="#about">О нас</a>
+									<a href="#price">Цены</a>
 								</li>
 
 
@@ -106,13 +103,9 @@
 			<li class="t-center m-b-13">
 				<a href="#gallery" class="txt19">Каталог</a>
 			</li>
-
 			<li class="t-center m-b-13">
-				<a href="#about" class="txt19">О нас</a>
+				<a href="#price" class="txt19">Цены</a>
 			</li>
-
-
-
 			<li class="t-center m-b-33">
 				<a href="#contact" class="txt19">Контакты</a>
 			</li>
@@ -683,7 +676,7 @@
 	</section>
 
 	<!-- Что мы производим-->
-	<section class="section-mainmenu p-t-120 p-b-70 ">
+	<section id="price" class="section-mainmenu p-t-120 p-b-70 ">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-lg-6 p-r-35 p-r-15-lg m-l-r-auto">
@@ -836,28 +829,28 @@
                                 //Подключаем вывод галереи на сайте
                                 require_once 'scripts/galleryPhoto.php'; 
                                 foreach ($data as $item) { ?>
-                                <div class="col-md-4 p-t-30 block-projects">
+                <div class="col-md-4 p-t-30 block-projects">
 					<!-- Block1 -->
 					<div class="blo1 gallery-case">
 						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative ">
-                                                    <div class="images-thumbnails">
-                                                        <a class ="click-project-loft" data-href="<?php echo $item->img_prev;?>"  data-title="<?php echo $item->name;?>">
-								<img src="<?php echo $item->img_prev;?>" alt="IMG-INTRO">
-							</a>
-                                                    </div>
+                                <div class="images-thumbnails">
+                                    <a href="#" class ="click-project-loft" data-href="<?php echo $item->img_prev;?>"  data-title="<?php echo $item->name;?>">
+																<img src="<?php echo $item->img_prev;?>" alt="IMG-INTRO">
+									</a>
+                               	</div>
                                                     <div class="list-images-fullsize">
                                                         <?php foreach ($item->img_list as $images) {?>
                                                             <a data-href="<?php echo $images->img_full;?>"></a>
                                                         <?php } ?>
                                                     </div>
                                                     <div class="time-blog price-project">
-								<?php echo $item->price;?>
+														<?php echo $item->price;?>
                                                     </div>
 						</div>
 
 						<div class="wrap-text-blo1 p-t-35 text-center">
 							<h4 class="txt5 color0-hov trans-0-4 m-b-13 title-project">
-								<?php echo $item->name;?>
+								<span class ="click-project-loft"><?php echo $item->name;?></span>
 							</h4>
 						</div>
 					</div>
