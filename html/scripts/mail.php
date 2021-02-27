@@ -67,7 +67,7 @@ if (isset($_POST) && !empty($_POST)) {
      }
 
      //Адрес указаный пользователем для связи с ним
-     $email_reply = (isset($_POST['email']))?$_POST['email']:'';
+     $email_reply = (isset($_POST['email']))?$_POST['email']:$option['addreply'];
      $title = "SV-LOFT || Запрос с сайта";
      /*=============================================================================*/
      //Template for mail
@@ -105,7 +105,7 @@ if (isset($_POST) && !empty($_POST)) {
      $mail->Username   = $option['username'];  // Имя пользователя на SMTP сервере
      $mail->Password   = $option['password'];  // Пароль от учетной записи на SMTP сервере
      $mail->AddAddress ($option['addAddress'], 'W');  // Адресат почтового сообщения
-     $mail->AddReplyTo($email_reply, 'Client');  // Альтернативный адрес для ответа
+     $mail->AddReplyTo($email_reply, $email_reply);  // Альтернативный адрес для ответа
      $mail->SetFrom($option['username'], $option['mail_name']);  // Адресант почтового сообщения
      $mail->Subject = htmlspecialchars($title);  // Тема письма
      $mail->MsgHTML($body); // Текст сообщения

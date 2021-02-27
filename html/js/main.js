@@ -182,21 +182,20 @@
 
 /* MaskInputPhone*/
 /* ===================================================== */
-    $('.phone').mask("+375 (99) 999-99-99",
-        {
-            completed: function(){
-               console.log("OK");
-            }
-        });
+    $('.phone').mask("+375 (99) 999-99-99");
 /* ===================================================== */
 /* Botton for Clear input form */
-    $('#clear').on('click', function (e) {
+    $('#clear_order, #clear').on('click', function (e) {
             e.preventDefault();
-            $('.contact-form')[0].reset();
+            var currentForm = $(this).closest('.modal-content').find('.contact-form');
+            if(currentForm){
+                (currentForm)[0].reset();
+                //Удаление классов валидации     
+                currentForm.find('input').each(function(){
+                        $(this).removeClass('has-error, has-success');
+                    });
+            }
     })
-
-
-
 /* Validate form for Modal Window*/
 /* ===================================================== */
     $('.contact-form').validate({
@@ -237,7 +236,7 @@
     //Форма обратной связи в модальном окне
     $('#exp').on('click', function (e) {
         e.preventDefault();
-        let form = $('.contact-form');
+        let form = $(this).closest('.modal-content').find('.contact-form');
         let formData = new FormData();
         if(form.valid()){
            form.find('input, textarea').each(function () {
@@ -306,6 +305,63 @@ $('.wrap-form-reservation').on('submit', function (e) {
 
 /* ===================================================== */
 
+/* Обработчик клика по кнопке Заказать Открытие модального окна через js*/
+$('.orderLoft').on('click', function(e){
+    e.preventDefault();
+    var itus = $(this);
+    var titleOrder;
+    itus.closest('.gallery-case').find('.click-project-loft').each(function () {
+        titleOrder=$(this).html();
+    })
+        if(titleOrder) {
+            $('#nameLoftOrder').html(titleOrder);
+        }
+    $("#orderModalForm").modal('show');
+})
+/* ===================================================== */
+
+/* Jquery Validate */
+	$('#OrderLoftForm').validate({
+		rules: {
+			name:{
+				required:true,
+				minlength: 2
+			},
+			phone:{
+				required:true,
+				minlength: 19
+			},
+		},
+		errorPlacement: function (error, element) {},
+                errorClass: "has-error",
+                validClass: "has-success",
+                highlight: function (element, errorClass, validClass ) {
+                        $(element)
+                            .closest('.form-control')
+                            .removeClass(validClass)
+                            .addClass(errorClass);
+                    },
+                unhighlight: function (element, errorClass, validClass) {
+                        $(element)
+                            .closest('.form-control')
+                            .removeClass(errorClass)
+                            .addClass(validClass);
+                    },
+		submitHandler: function(form) {
+			dataFormAjax(form);
+		}
+	});
+
+    function dataFormAjax (form) {
+                let formData = new FormData();
+                    $(form).find('input').each(function () {
+                        formData.append($(this).attr('name'), $(this).val());
+                    });
+                    formData.append('nameOrder', $('#nameLoftOrder').html());
+        ajaxDataTransfer($(form), formData);
+    }   
+   
+   
 /* jquery function transmission data on form*/
     function ajaxDataTransfer (form, formdata) {
         let uri = "/scripts/mail.php";

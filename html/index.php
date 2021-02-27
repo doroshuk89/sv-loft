@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
         
         <!-- JqueryLightGallery -->
         <link rel="stylesheet" href="css/lightgallery.min.css">
@@ -847,12 +847,19 @@
 														<?php echo $item->price;?>
                                                     </div>
 						</div>
-
-						<div class="wrap-text-blo1 p-t-35 text-center">
+                                                
+                                                <div>
+                                                    <span>
+                                                        <a href="#" class="orderLoft btn1 flex-c-m size13  trans-0-4 m-l-r-auto m-t-10">Заказать</a>
+                                                    </span>
+                                                </div>
+						
+                                                <div class="wrap-text-blo1 p-t-20 p-b-10 text-center">
 							<h4 class="txt5 color0-hov trans-0-4 m-b-13 title-project">
 								<span class ="click-project-loft"><?php echo $item->name;?></span>
 							</h4>
 						</div>
+                                                
 					</div>
 				</div>
                             <?php } ?>
@@ -1309,10 +1316,52 @@
 				</div>
 
 				<div class="modal-footer">
-					<button type="button" id="exp" class="btn btn-primary">Заказать</button>
+					<button type="button" id="exp" class="btn btn-primary">Отправить</button>
 					<button type="button" id="clear" class="btn btn-secondary">Очистить</button>
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
 				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	<!-- END feedback -->
+        
+        <!-- Modal window orders -->
+	<section>
+		<div class="modal fade" id="orderModalForm" tabindex="-1" role="dialog" aria-labelledby="feedModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+
+			<div class="modal-content callback">
+				<div class="modal-header">
+					<h5 class="modal-title" id="feedModalLabel">Предварительный заказ ..</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+                            <div class="modal-header">
+                                <h5 id="nameLoftOrder"></h5>
+                            </div>
+
+				<div class="modal-body">
+					<form class="contact-form" id="OrderLoftForm">
+						<div class="form-group">
+							<input type="text" class="form-control" name = "name" id="" placeholder="Имя ..">
+						</div>
+						<div class="form-group">
+							<input type="tel" class="form-control phone" name= "phone" id="" placeholder="Номер телефона ..">
+						</div>
+						<div id="response_order">
+							<p class="msg"></p>
+						</div>
+                                                <div class="modal-footer">
+                                                        <button type="submit" id="getOrder" class="btn btn-primary">Заказать</button>
+                                                        <button type="button" id="clear_order" class="btn btn-secondary">Очистить</button>
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                                </div>
+					</form>
+				</div>
+
+				
 			</div>
 		</div>
 	</div>
