@@ -187,12 +187,14 @@
 /* Botton for Clear input form */
     $('#clear_order, #clear').on('click', function (e) {
             e.preventDefault();
+            
             var currentForm = $(this).closest('.modal-content').find('.contact-form');
             if(currentForm){
                 (currentForm)[0].reset();
+                
                 //Удаление классов валидации     
-                currentForm.find('input').each(function(){
-                        $(this).removeClass('has-error, has-success');
+                currentForm.find('input, textarea').each(function(){
+                        $(this).removeClass('has-error has-success');
                     });
             }
     })
@@ -391,8 +393,8 @@ $('.orderLoft').on('click', function(e){
                             form.find("p.msg").addClass("msg-success").fadeIn("slow");
                             setTimeout(function () {
                                 //Если форма в модально окне, закрываем модальное окно при успехе
-                                if (form.closest('#feedBackForm').hasClass('modal')) {
-                                    form.closest('#feedBackForm').modal( 'hide' );
+                                if (form.closest('#feedBackForm, #orderModalForm').hasClass('modal')) {
+                                    form.closest('#feedBackForm, #orderModalForm').modal( 'hide' );
                                 }
                             $('p.msg').fadeOut("slow").removeClass('msg-success').val("");
                         }, 3000);
