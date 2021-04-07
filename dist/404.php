@@ -17,11 +17,10 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.min.css">
         
         <!-- JqueryLightGallery -->
-        <link rel="stylesheet" href="css/lightgallery.min.css">
+       <link rel="stylesheet" href="vendor/lightgallery/css/lightgallery.min.css">
         <!-- Фавикон -->
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico"/>
 <!--===============================================================================================-->
@@ -37,7 +36,7 @@
 					<!-- Logo -->
 					<div class="logo">
 						<a href="/">
-							<img src="img/sv.png" alt="IMG-LOGO" data-logofixed="img/sv.png">
+							<img src="images/sv.png" alt="IMG-LOGO" data-logofixed="images/sv.png">
 							<span class="tit2 t-center">SV-LOFT</span>
 						</a>
 					</div>
@@ -91,39 +90,39 @@
 			</h4>
 
 			<div class="wrap-gallery-sidebar flex-w">
-				<a class="item-gallery-sidebar wrap-pic-w" href="img/footer-gallery/1.jpeg">
-					<img src="img/thumbnails/1-th.jpeg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/footer-gallery/1.jpeg">
+					<img src="images/thumbnails/1-th.jpeg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="img/footer-gallery/2.jpg">
-					<img src="img/thumbnails/2-th.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/footer-gallery/2.jpg">
+					<img src="images/thumbnails/2-th.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="img/footer-gallery/4.jpeg">
-					<img src="img/thumbnails/4-th.jpeg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/footer-gallery/4.jpeg">
+					<img src="images/thumbnails/4-th.jpeg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="img/footer-gallery/5.jpeg">
-					<img src="img/thumbnails/5-th.jpeg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/footer-gallery/5.jpeg">
+					<img src="images/thumbnails/5-th.jpeg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="img/footer-gallery/6.jpg">
-					<img src="img/thumbnails/6-th.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/footer-gallery/6.jpg">
+					<img src="images/thumbnails/6-th.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="img/footer-gallery/7.jpeg">
-					<img src="img/thumbnails/7-th.jpeg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/footer-gallery/7.jpeg">
+					<img src="images/thumbnails/7-th.jpeg" alt="GALLERY">
 				</a>
-				<a class="item-gallery-sidebar wrap-pic-w" href="img/footer-gallery/9.jpg">
-					<img src="img/thumbnails/9-th.jpg" alt="GALLERY">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="img/footer-gallery/10.jpeg">
-					<img src="img/thumbnails/10-th.jpeg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/footer-gallery/9.jpg">
+					<img src="images/thumbnails/9-th.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="img/footer-gallery/12.jpg">
-					<img src="img/thumbnails/12-th.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/footer-gallery/10.jpeg">
+					<img src="images/thumbnails/10-th.jpeg" alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/footer-gallery/12.jpg">
+					<img src="images/thumbnails/12-th.jpg" alt="GALLERY">
 				</a>
 			</div>
 
@@ -234,52 +233,52 @@
 
 					<!-- Gallery footer -->
 					<div class="wrap-gallery-footer flex-w">
-						<a class="item-gallery-footer wrap-pic-w" href="img/footer-gallery/1.jpeg" >
-							<img src="img/thumbnails/1-th.jpeg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="images/footer-gallery/1.jpeg" >
+							<img src="images/thumbnails/1-th.jpeg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="img/footer-gallery/2.jpg" >
-							<img src="img/thumbnails/2-th.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="images/footer-gallery/2.jpg" >
+							<img src="images/thumbnails/2-th.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="img/footer-gallery/3.jpg" >
-							<img src="img/thumbnails/3-th.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="images/footer-gallery/3.jpg" >
+							<img src="images/thumbnails/3-th.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="img/footer-gallery/4.jpeg">
-							<img src="img/thumbnails/4-th.jpeg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="images/footer-gallery/4.jpeg">
+							<img src="images/thumbnails/4-th.jpeg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="img/footer-gallery/5.jpeg">
-							<img src="img/thumbnails/5-th.jpeg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="images/footer-gallery/5.jpeg">
+							<img src="images/thumbnails/5-th.jpeg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="img/footer-gallery/6.jpg">
-							<img src="img/thumbnails/6-th.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="images/footer-gallery/6.jpg">
+							<img src="images/thumbnails/6-th.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="img/footer-gallery/7.jpeg">
-							<img src="img/thumbnails/7-th.jpeg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="images/footer-gallery/7.jpeg">
+							<img src="images/thumbnails/7-th.jpeg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="img/footer-gallery/8.jpg">
-							<img src="img/thumbnails/8-th.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="images/footer-gallery/8.jpg">
+							<img src="images/thumbnails/8-th.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="img/footer-gallery/9.jpg">
-							<img src="img/thumbnails/9-th.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="images/footer-gallery/9.jpg">
+							<img src="images/thumbnails/9-th.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="img/footer-gallery/10.jpeg">
-							<img src="img/thumbnails/10-th.jpeg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="images/footer-gallery/10.jpeg">
+							<img src="images/thumbnails/10-th.jpeg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="img/footer-gallery/11.jpg">
-							<img src="img/thumbnails/11-th.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="images/footer-gallery/11.jpg">
+							<img src="images/thumbnails/11-th.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="img/footer-gallery/12.jpg">
-							<img src="img/thumbnails/12-th.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="images/footer-gallery/12.jpg">
+							<img src="images/thumbnails/12-th.jpg" alt="GALLERY">
 						</a>
 					</div>
 
@@ -365,8 +364,6 @@
 <!--===============================================================================================-->
 	<script  src="vendor/slick/slick.min.js"></script>
 <!--===============================================================================================-->
-	<script  src="js/slick-custom.min.js"></script>
-<!--===============================================================================================-->
 	<script  src="vendor/parallax100/parallax100.js"></script>
 	<script >
                 $('.parallax100').parallax100();
@@ -379,10 +376,10 @@
 	<script src="vendor/isotope/isotope.pkgd.min.js"></script>
 <!--===============================================================================================-->
 <!-- JqueryLightGallery -->
-        <script  src="js/lightgallery.min.js"></script>
-        <script  src="js/jquery.mousewheel.min.js"></script>
-        <script  src="js/lg-fullscreen.min.js"></script>
-        <script  src="js/lg-thumbnail.min.js"></script>
+       <script  src="vendor/lightgallery/js/lightgallery.min.js"></script>
+        <script  src="vendor/lightgallery/js/jquery.mousewheel.min.js"></script>
+        <script  src="vendor/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script  src="vendor/lightgallery/js/lg-thumbnail.min.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.min.js"></script>
 </body>

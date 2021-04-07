@@ -17,13 +17,12 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.min.css">
         
         <!-- JqueryLightGallery -->
         <link rel="stylesheet" href="vendor/lightgallery/css/lightgallery.min.css">
         <!-- Фавикон -->
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico"/>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico"/>
 <!--===============================================================================================-->
 </head>
 <body id="header" class="animsition">

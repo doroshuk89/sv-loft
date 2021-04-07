@@ -15,6 +15,11 @@ gulp.task("copy", function () {
     return gulp.src ("app/**/*.+(html|php|json|log)")
             .pipe (gulp.dest("dist/"))
 });
+//Копирование htaccess с использованием дополнительнной опции dot:true
+gulp.task("htaccess", function () {
+    return gulp.src ("app/.htaccess", { dot: true })
+            .pipe (gulp.dest("dist/"))
+});
 
 //Копирование файлов и папок из папки vendor
 gulp.task("vendors", function () {
@@ -31,7 +36,7 @@ gulp.task('fonts', function() {
 //Оптимизация css
 gulp.task("css", function () {
    return gulp.src("app/css/**/*.css")
-        //.pipe(concat('main.css'))
+        .pipe(concat('main.css'))
         .pipe(autoprefixer())
         .pipe(cssnano())
         .pipe(rename({ suffix: '.min' }))
@@ -73,7 +78,7 @@ gulp.task("images_projects", function() {
 
 //Следить за изменениями в файлах
 gulp.task ("watcher", function () {
-    gulp.watch('app/**/*.+(html|php|json|log)',  gulp.parallel('copy'));
+    gulp.watch('app/**/*.+(html|php|json|log)',   gulp.parallel('copy'));
     gulp.watch("app/vendor/**/*",  gulp.parallel('vendors'));
     gulp.watch("app/fonts/**/*",  gulp.parallel('fonts'));
     gulp.watch("app/img/**/*.+(png|jpeg|jpg|svg|gif|ico)",  gulp.parallel('images'));
@@ -92,8 +97,7 @@ gulp.task('clear', function (callback) {
 	return cache.clearAll();
 })
 
-
-gulp.task("default", gulp.parallel("copy", "vendors", "images", "images_projects", "fonts","css","scripts", "watcher"));
-gulp.task("build", gulp.parallel("del", "clear", "copy", "vendors", "images", "images_projects", "fonts","css","scripts"));
+gulp.task("default", gulp.parallel("copy", "htaccess", "vendors", "images", "images_projects", "fonts","css","scripts", "watcher"));
+gulp.task("build", gulp.parallel("del", "clear", "copy", "htaccess", "vendors", "images", "images_projects", "fonts","css","scripts"));
 
 
