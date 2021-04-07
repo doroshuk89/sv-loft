@@ -1,0 +1,20 @@
+{
+    "name": "atlas/loft",
+    "description": "LandingPage Loft style for Mebel",
+    "require": {
+        "respect/validation": "^2.0",
+        "phpmailer/phpmailer": "^6.1"
+    },
+    "authors": [
+        {
+            "name": "Atlas",
+            "email": "doroshuk33@yandex.by"
+        }
+    ],
+    "autoload": {
+        	"psr-4": {
+                            "MyClasses\\": "scripts/Classes",
+                            "CustomException\\":  "scripts/Classes/Exception"
+                	}
+       }
+}

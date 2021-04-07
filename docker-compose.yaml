@@ -9,5 +9,5 @@ services:
     ports:
       - 8120:80
     volumes:
-      - ./html/:/var/www/html
+      - ./dist/:/var/www/html
     
