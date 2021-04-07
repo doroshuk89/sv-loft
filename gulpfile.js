@@ -31,7 +31,7 @@ gulp.task('fonts', function() {
 //Оптимизация css
 gulp.task("css", function () {
    return gulp.src("app/css/**/*.css")
-        .pipe(concat('main.css'))
+        //.pipe(concat('main.css'))
         .pipe(autoprefixer())
         .pipe(cssnano())
         .pipe(rename({ suffix: '.min' }))

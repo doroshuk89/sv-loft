@@ -17,6 +17,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.min.css">
 <!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.min.css">
         
         <!-- JqueryLightGallery -->
@@ -612,7 +613,7 @@
 
 	<!-- Offer 1 -->
 	<section class="section-intro">
-		<div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(img/bg1-loft.jpg); position: relative;">
+		<div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(images/bg1-loft.jpg); position: relative;">
 			<div class="overlay-bg visible-true"></div>
 			<div class="position2">
 				<span class="tit2 p-l-15 p-r-15">
