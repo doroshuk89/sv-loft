@@ -49,17 +49,13 @@
     var linkLogo1 = $(logo).attr('src');
     var linkLogo2 = $(logo).data('logofixed');
 
-
     $(window).on('scroll',function(){
         if($(this).scrollTop() > 5) {
-            $(logo).attr('src',linkLogo2);
             $(header).addClass('header-fixed');
         }
         else {
             $(header).removeClass('header-fixed');
-            $(logo).attr('src',linkLogo1);
         }
-        
     });
 
     /*[ Show/hide sidebar ]
@@ -73,22 +69,26 @@
     $(btnShowSidebar).on('click', function(){
         $(sidebar).addClass('show-sidebar');
         $(ovlSideBar).addClass('show-overlay-sidebar');
+        $('body').addClass('body-open');
     })
 
     $(btnHideSidebar).on('click', function(){
         $(sidebar).removeClass('show-sidebar');
         $(ovlSideBar).removeClass('show-overlay-sidebar');
+        $('body').removeClass('body-open');
     })
 
     $(ovlSideBar).on('click', function(){
         $(sidebar).removeClass('show-sidebar');
         $(ovlSideBar).removeClass('show-overlay-sidebar');
+        $('body').removeClass('body-open');
     })
 
     //Скрыть меню при переходам по ссылкам якорям
     $('.sidebar li a.txt19').on ('click', function () {
         $(sidebar).removeClass('show-sidebar');
         $(ovlSideBar).removeClass('show-overlay-sidebar');
+        $('body').removeClass('body-open');
     })
 
     /*[ Isotope ]

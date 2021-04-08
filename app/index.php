@@ -504,7 +504,7 @@
 					<img src="images/1.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/1.jpg" data-title="Современный стелаж"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="images/1.jpg" data-title="Современный стелаж"></a>
 					</div>
 				</div>
 
@@ -513,7 +513,7 @@
 					<img src="images/sg_1.jpeg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/sg_1.jpeg" ></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="images/sg_1.jpeg" ></a>
 					</div>
 				</div>
 
@@ -522,7 +522,7 @@
 					<img src="images/sg_2.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/sg_2.jpg" ></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="images/sg_2.jpg" ></a>
 					</div>
 				</div>
 
@@ -531,7 +531,7 @@
 					<img src="images/b_1.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/b_1.jpg"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="images/b_1.jpg"></a>
 					</div>
 				</div>
 
@@ -540,7 +540,7 @@
 					<img src="images/b_2.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/b_2.jpg" ></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="images/b_2.jpg" ></a>
 					</div>
 				</div>
 
@@ -549,7 +549,7 @@
 					<img src="images/b_3.jpeg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/b_3.jpeg" ></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="images/b_3.jpeg" ></a>
 					</div>
 				</div>
 
@@ -558,7 +558,7 @@
 					<img src="images/sg_3.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/sg_3.jpg" ></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="images/sg_3.jpg" ></a>
 					</div>
 				</div>
 
@@ -567,7 +567,7 @@
 					<img src="images/s1.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/s1.jpg"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="images/s1.jpg"></a>
 					</div>
 				</div>
 
@@ -576,14 +576,14 @@
 					<img src="images/stol.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/stol.jpg"></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="images/stol.jpg"></a>
 					</div>
 				</div>
 				<div class="item-gallery isotope-item bo-rad-10 hov-img-zoom stul">
 					<img src="images/st1.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/st1.jpg" ></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="images/st1.jpg" ></a>
 					</div>
 				</div>
 
@@ -592,7 +592,7 @@
 					<img src="images/st2.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/st2.jpg" ></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="images/st2.jpg" ></a>
 					</div>
 				</div>
 
@@ -601,7 +601,7 @@
 					<img src="images/st3.jpg" alt="IMG-GALLERY">
 
 					<div class="overlay-item-gallery trans-0-4 flex-c-m">
-						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="img/st3.jpg" ></a>
+						<a class="btn-show-gallery flex-c-m fa fa-search click-full-image" data-href="images/st3.jpg" ></a>
 					</div>
 				</div>
 			</div>
@@ -1307,7 +1307,7 @@
 						<div class="form-group">
 							<textarea name="message" class="form-control" placeholder="Сообщение .."></textarea>
 						</div>
-						<div id="response_order">
+						<div>
 							<p class="msg"></p>
 						</div>
 					</form>
@@ -1327,29 +1327,29 @@
         
         <!-- Modal window orders -->
 	<section>
-		<div class="modal fade" id="orderModalForm" tabindex="-1" role="dialog" aria-labelledby="feedModalLabel" aria-hidden="true">
+		<div class="modal fade" id="orderModalForm" tabindex="-1" role="dialog" aria-labelledby="feedModalLabelOrder" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 
 			<div class="modal-content callback">
 				<div class="modal-header">
-					<h5 class="modal-title" id="feedModalLabel">Предварительный заказ ..</h5>
+					<h5 class="modal-title" id="feedModalLabelOrder">Предварительный заказ ..</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
                             <div class="modal-header">
-                                <h5 id="nameLoftOrder"></h5>
+                                <h5 id="nameLoftOrder">Мебель ЛОФТ</h5>
                             </div>
 
 				<div class="modal-body">
 					<form class="contact-form" id="OrderLoftForm">
 						<div class="form-group">
-							<input type="text" class="form-control" name = "name" id="" placeholder="Имя ..">
+							<input type="text" class="form-control" name = "name"  placeholder="Имя ..">
 						</div>
 						<div class="form-group">
-							<input type="tel" class="form-control phone" name= "phone" id="" placeholder="Номер телефона ..">
+							<input type="tel" class="form-control phone" name= "phone"  placeholder="Номер телефона ..">
 						</div>
-						<div id="response_order">
+						<div>
 							<p class="msg"></p>
 						</div>
                                                 <div class="modal-footer">
@@ -1396,6 +1396,12 @@
         <script  src="vendor/lightgallery/js/lg-thumbnail.min.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.min.js"></script>
-        <script src="//code-ya.jivosite.com/widget/IZ8GFjW5Ok" async></script>
+        <!--<script src="//code-ya.jivosite.com/widget/IZ8GFjW5Ok" async></script> -->
+    <script>
+        (function(w,d,u){
+            var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+            var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn-ru.bitrix24.ru/b16756392/crm/site_button/loader_1_s1sm3e.js');
+    </script>
 </body>
 </html>

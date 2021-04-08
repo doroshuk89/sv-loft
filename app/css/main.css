@@ -280,7 +280,7 @@ iframe {
   width: 40px;
   height: 40px;
   bottom: 80px;
-  right: 40px;
+  right: 66px;
   background-color: black;
   opacity: 0.5;
   justify-content: center;
@@ -1697,4 +1697,7 @@ body {padding-right: 0px !important;}
 }
 span.click-project-loft {
   cursor: pointer;
+}
+.body-open {
+  overflow: hidden;
 }
