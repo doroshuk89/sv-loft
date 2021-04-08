@@ -279,8 +279,8 @@ iframe {
   position: fixed;
   width: 40px;
   height: 40px;
-  bottom: 80px;
-  right: 66px;
+  bottom: 0px;
+  right: 62px;
   background-color: black;
   opacity: 0.5;
   justify-content: center;
