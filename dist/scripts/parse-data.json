@@ -1,0 +1,27 @@
+[
+    {
+      "id": "OrderLoftForm",
+      "fields": {
+        "name": "Имя",
+        "phone": "Номер телефона",
+        "nameOrder": "Товар"
+      }
+    },
+    {
+      "id": "contact-order",
+      "fields": {
+        "name": "Имя",
+        "email": "Email",
+        "message": "Сообщение"
+      }
+    },
+    {
+      "id": "contact-order-main",
+      "fields": {
+        "name": "Имя",
+        "email": "Email",
+        "phone": "Номер телефона",
+        "message": "Сообщение"
+      }
+    }
+]

@@ -1,0 +1,13 @@
+{
+        "host":"smtp.yandex.com",
+        "debug":0,
+        "auth":true,
+        "port":"465",
+        "username":"relayForLoft@yandex.by",
+        "password":"Brestcoredallas89",
+        "addreply":"NotFound@gmail.com",
+        "secure":"ssl",
+        "mail_title":"Запрос с сайта Sv-Loft.by",
+        "mail_name":"Sv-Loft.by",
+        "addAddress":"doroshuk33@yandex.by"
+}

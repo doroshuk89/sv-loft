@@ -23,8 +23,10 @@ use Respect\Validation\Message\Formatter;
 use Respect\Validation\Message\ParameterStringifier;
 use Respect\Validation\Message\Stringifier\KeepOriginalStringName;
 
+use function array_merge;
 use function lcfirst;
 use function sprintf;
+use function str_replace;
 use function trim;
 use function ucfirst;
 
@@ -36,13 +38,6 @@ use function ucfirst;
  */
 final class Factory
 {
-    /**
-     * Default instance of the Factory.
-     *
-     * @var Factory
-     */
-    private static $defaultInstance;
-
     /**
      * @var string[]
      */
@@ -63,9 +58,28 @@ final class Factory
      */
     private $parameterStringifier;
 
+    /**
+     * Default instance of the Factory.
+     *
+     * @var Factory
+     */
+    private static $defaultInstance;
+
     public function __construct()
     {
         $this->parameterStringifier = new KeepOriginalStringName();
+    }
+
+    /**
+     * Returns the default instance of the Factory.
+     */
+    public static function getDefaultInstance(): self
+    {
+        if (self::$defaultInstance === null) {
+            self::$defaultInstance = new self();
+        }
+
+        return self::$defaultInstance;
     }
 
     public function withRuleNamespace(string $rulesNamespace): self
@@ -98,26 +112,6 @@ final class Factory
         $clone->parameterStringifier = $parameterStringifier;
 
         return $clone;
-    }
-
-    /**
-     * Define the default instance of the Factory.
-     */
-    public static function setDefaultInstance(self $defaultInstance): void
-    {
-        self::$defaultInstance = $defaultInstance;
-    }
-
-    /**
-     * Returns the default instance of the Factory.
-     */
-    public static function getDefaultInstance(): self
-    {
-        if (self::$defaultInstance === null) {
-            self::$defaultInstance = new self();
-        }
-
-        return self::$defaultInstance;
     }
 
     /**
@@ -165,7 +159,8 @@ final class Factory
         if ($validatable->getName() !== null) {
             $id = $params['name'] = $validatable->getName();
         }
-        foreach ($this->exceptionsNamespaces as $namespace) {
+        $exceptionNamespace = str_replace('\\Rules', '\\Exceptions', $reflection->getNamespaceName());
+        foreach (array_merge([$exceptionNamespace], $this->exceptionsNamespaces) as $namespace) {
             try {
                 /** @var class-string<ValidationException> $exceptionName */
                 $exceptionName = $namespace . '\\' . $ruleName . 'Exception';
@@ -183,6 +178,14 @@ final class Factory
         }
 
         return new ValidationException($input, $id, $params, $formatter);
+    }
+
+    /**
+     * Define the default instance of the Factory.
+     */
+    public static function setDefaultInstance(self $defaultInstance): void
+    {
+        self::$defaultInstance = $defaultInstance;
     }
 
     /**

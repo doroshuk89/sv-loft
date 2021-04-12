@@ -244,6 +244,7 @@
            form.find('input, textarea').each(function () {
                formData.append($(this).attr('name'), $(this).val());
            })
+           formData.append("id_form", form.attr('id'));
             ajaxDataTransfer(form, formData);
         }
     });
@@ -300,6 +301,7 @@ $('.wrap-form-reservation').on('submit', function (e) {
                 form.find('input, textarea').each(function () {
                     formData.append($(this).attr('name'), $(this).val());
                 });
+                formData.append("id_form", form.attr('id'));
                 ajaxDataTransfer(form, formData);
             }
         return false;
@@ -359,6 +361,7 @@ $('.orderLoft').on('click', function(e){
                     $(form).find('input').each(function () {
                         formData.append($(this).attr('name'), $(this).val());
                     });
+                    formData.append("id_form", $(form).attr('id'));
                     formData.append('nameOrder', $('#nameLoftOrder').html());
         ajaxDataTransfer($(form), formData);
     }   
@@ -366,7 +369,7 @@ $('.orderLoft').on('click', function(e){
    
 /* jquery function transmission data on form*/
     function ajaxDataTransfer (form, formdata) {
-        let uri = "/scripts/mail.php";
+        let uri = "/scripts/notify.php";
         $.ajax ({
             type: 'POST',
             url:uri,
