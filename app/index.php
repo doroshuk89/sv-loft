@@ -688,9 +688,9 @@
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
+								<span class="name-item-mainmenu txt21">
 									Стулья
-								</a>
+								</span>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
@@ -707,9 +707,9 @@
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
+								<span class="name-item-mainmenu txt21">
 									Столы
-								</a>
+								</span>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
@@ -726,9 +726,9 @@
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
+								<span  class="name-item-mainmenu txt21">
 									Стеллажи
-								</a>
+								</span>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
@@ -745,9 +745,9 @@
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
+								<span class="name-item-mainmenu txt21">
 									Барные стойки
-								</a>
+								</span>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
@@ -764,9 +764,9 @@
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
+								<span class="name-item-mainmenu txt21">
 									Лавочки
-								</a>
+								</span>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
@@ -783,9 +783,9 @@
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
+								<span class="name-item-mainmenu txt21">
 									Полки и вешалки
-								</a>
+								</span>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 

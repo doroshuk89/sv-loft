@@ -1,32 +1,30 @@
 [
 	{
     			"name":	"Барная стойка с подсветкой",
-    			"img_prev": "images/case/1-th.jpeg",
+    			"img_prev": "loft_projects/loft-bar/thumb.jpg",
     			"price": "$ 250",
     			"img_list" : 	[
-    								{"img_full": "images/case/1.jpeg"},
-    								{"img_full": "images/case/1.jpeg"},
-    								{"img_full": "images/case/1.jpeg"}
+    								{"img_full": "loft_projects/loft-bar/1.jpeg"},
+    								{"img_full": "loft_projects/loft-bar/3.jpg"},
+    								{"img_full": "loft_projects/loft-bar/4.jpg"},
+    								{"img_full": "loft_projects/loft-bar/5.jpg"}
     							]
 	},
 	{
     			"name":	"Офисный стол для руководителя",
-    			"img_prev": "images/case/2-th.jpeg",
+    			"img_prev": "loft_projects/loft-jobs/thumb.jpg",
     			"price": "$ 460",
     			"img_list" : 	[
-    								{"img_full": "images/case/2.jpeg"},
-    								{"img_full": "images/case/2.jpeg"},
-    								{"img_full": "images/case/2.jpeg"}
+    								{"img_full": "loft_projects/loft-jobs/2.jpeg"}
     							]
 	},
 	{
     			"name":	"Барные стулья",
-    			"img_prev": "images/case/3-th.jpeg",
+    			"img_prev": "loft_projects/stuls/thumb.jpg",
     			"price": "$ 40",
     			"img_list" : 	[
-    								{"img_full": "images/case/3.jpeg"},
-    								{"img_full": "images/case/3.jpeg"},
-    								{"img_full": "images/case/3.jpeg"}
+    								{"img_full": "loft_projects/stuls/1.jpg"},
+    								{"img_full": "loft_projects/stuls/3.jpeg"}
     							]
 	},
     {
@@ -49,6 +47,15 @@
                                     {"img_full": "loft_projects/loft_stol/1.jpeg"},
                                     {"img_full": "loft_projects/loft_stol/2.jpeg"},
                                     {"img_full": "loft_projects/loft_stol/3.jpeg"}
+                                ]
+    },
+    {
+                "name": "Гардероб LOFT",
+                "img_prev": "loft_projects/loft-garderob/thumb.jpg",
+                "price": "$ 140",
+                "img_list" :    [
+                                    {"img_full": "loft_projects/loft-garderob/1.jpg"},
+                                    {"img_full": "loft_projects/loft-garderob/2.jpg"}
                                 ]
     }
 ]
