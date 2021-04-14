@@ -363,12 +363,35 @@ $('.orderLoft').on('click', function(e){
                     });
                     formData.append("id_form", $(form).attr('id'));
                     formData.append('nameOrder', $('#nameLoftOrder').html());
+                    
+                   
+                    
         ajaxDataTransfer($(form), formData);
     }   
    
-   
+//Функция получения и добавления UTM меток при отправки заявки из форм на сайте
+   function add_UTM (data) {
+      let utm_default = {
+            utm_source: "organic",
+            utm_medium:"seo",
+            utm_campaign: "loft",
+            utm_content: "loft",
+            utm_term: "лофт",
+        }; 
+      let utm = localStorage.getItem("utm-tags-atlas-plugin");
+            if(utm) {
+                         data.append('UTM', (utm));
+                     }else {
+                         data.append('UTM', JSON.stringify(utm_default));
+                     }
+      return data;
+   }
+        
+        
 /* jquery function transmission data on form*/
     function ajaxDataTransfer (form, formdata) {
+        var formdata = add_UTM(formdata);
+            
         let uri = "/scripts/notify.php";
         $.ajax ({
             type: 'POST',

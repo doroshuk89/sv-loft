@@ -14,3 +14,6 @@
 
 [20-Feb-2021 18:03:45 UTC] Ошибка PhpMailer передачи почты - <strong>SMTP Error: Could not authenticate.</strong><br />
 
+[14-Apr-2021 17:50:58 UTC] PHP Warning:  Undefined array key "Номер телефона" in /var/www/html/scripts/notify.php on line 114
+[14-Apr-2021 17:50:58 UTC] PHP Warning:  Undefined variable $number in /var/www/html/vendor/atlas89/bitrix-createleads-api/src/ClientBitrix.php on line 138
+[14-Apr-2021 17:50:58 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/vendor/atlas89/bitrix-createleads-api/src/ClientBitrix.php on line 138

@@ -1,6 +1,5 @@
 <?php
 
-session_start();
 //Название домена
 $host = $_SERVER["HTTP_HOST"];
 //Корень сайта
@@ -118,10 +117,16 @@ if (isset($_POST) && !empty($_POST)) {
                                 ['VALUE' => $data['Email'], 'VALUE_TYPE' => 'HOME'],
                         ],
                 "COMMENTS" => $comments,
-                "UTM_SOURCE" => $_SESSION["utm_source"],
-                "UTM_MEDIUM" =>$_SESSION['utm_medium'],
-                "UTM_CAMPAIGN" =>$_SESSION['utm_campaign']
             ];
+        
+        
+        //Добавляем UTM метки при их наличии
+        if(isset($_POST['UTM'])) {
+                $utms = json_decode($_POST['UTM'], true);
+                foreach ($utms as $key=>$utm) {
+                    $dataBitrix24[strtoupper($key)] = $utm; 
+                }
+            }
         $lead->createLead($dataBitrix24); 
         
      /*=============================================================================*/
@@ -169,10 +174,9 @@ if (isset($_POST) && !empty($_POST)) {
          
          //Оповещение в телеграмм
          $client->sendMessages("{$host}\nЗапрос с сайта\nПроверьте почтовый ящик\n");
-         //
+        
          response("Ожидайте. Мы свяжемся с вами!", true);
          emailLog($_POST, $emailLog, 'SUCCESS TRANSFER');
-
 
      }else {
          response('Ошибка! Попробуйте позже', false);
