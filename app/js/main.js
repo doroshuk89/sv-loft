@@ -132,7 +132,7 @@
     });
 
     /*Smooth scroll */
-    $('.menu a, .menu-sidebar a').on('click', function (e) {
+    $('.menu a, .menu-sidebar a').not(".contact-link").on('click', function (e) {
         e.preventDefault();
             let href = $(this).attr('href');
         if(href != '#') {

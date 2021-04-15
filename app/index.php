@@ -115,7 +115,21 @@
 					Оставить заявку
 				</a>
 			</li>
-			<li class="t-center m-b-33">
+			
+                        <li class="t-center m-b-33 ">
+                            <div>
+                                <a class="contact-link" href ="tel:+375295506565">+375(29)550-65-65</a>
+                            </div>
+                            <div>
+                                <a class="contact-link" href ="tel:+375297925779">+375(29)792-57-79</a>
+                            </div>
+                            <div class="p-t-10">
+                                <a class="contact-link" href ="mailto:loft@sv-kupe.by">loft@sv-kupe.by</a>
+                            </div>
+                            
+                            
+                        </li>
+                        <li class="t-center m-b-33">
 				<div class="">
 					<a href="#" class="fs-15"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 					<a href="#" class="fs-15"><i class="fa fa-vk m-l-18" aria-hidden="true"></i></a>
@@ -1159,7 +1173,7 @@
 
 						<li class="txt14 m-b-14">
 							<i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
-							sv-ceh@tut.by
+							loft@sv-kupe.by
 						</li>
 					</ul>
 
@@ -1399,8 +1413,8 @@
         <!--<script src="//code-ya.jivosite.com/widget/IZ8GFjW5Ok" async></script> -->
     <script>
         (function(w,d,u){
-            var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
-            var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
         })(window,document,'https://cdn-ru.bitrix24.ru/b16756178/crm/site_button/loader_2_bclsbm.js');
     </script>
 </body>

@@ -27,8 +27,8 @@ $chad_id = "-453374119";
 $client = new NotifyTelegram ($token_bot, $chad_id);
 
 //Создание лида в bitrix24 при поступлении новой заявки
-$domain = "atlascomp";
-$hook = "rest/1/q8khfywwh6a3c14n/";
+$domain = "svkupe";
+$hook = "/rest/1/gnelgg75w2bh3rin/";
 $uri_api = "crm.lead.add";
 $lead = new ClientBitrix($domain, $hook, $uri_api);
 
