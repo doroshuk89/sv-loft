@@ -19,18 +19,11 @@ use \Respect\Validation\Exceptions\ValidationException;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception as PhpMailerExceptions;
 use \atlasTelegramNotify\NotifyTelegram;
-use \atlasBitrixRestApi\ClientBitrix;
 
 //Оповещение в телеграмм 
 $token_bot = "1785299982:AAEoQxTtZeFtfFENxLTeAu1t5O-Lrz_hYe4";
 $chad_id = "-453374119";
 $client = new NotifyTelegram ($token_bot, $chad_id);
-
-//Создание лида в bitrix24 при поступлении новой заявки
-$domain = "svkupe";
-$hook = "/rest/1/gnelgg75w2bh3rin/";
-$uri_api = "crm.lead.add";
-$lead = new ClientBitrix($domain, $hook, $uri_api);
 
 //File Settings
 $config = file_get_contents("mail-config.json");
@@ -106,18 +99,6 @@ if (isset($_POST) && !empty($_POST)) {
         }
         // =====================================
         
-        //Формируем данные для bitrix24
-        $dataBitrix24 = [
-                "TITLE" => $title,
-                "NAME" => $data['Имя'],
-                "PHONE" => [ 
-                                [ "VALUE" =>$data["Номер телефона"], "VALUE_TYPE" => "WORK"],
-                            ],
-                "EMAIL" => [
-                                ['VALUE' => $data['Email'], 'VALUE_TYPE' => 'HOME'],
-                        ],
-                "COMMENTS" => $comments,
-            ];
         
         
         //Добавляем UTM метки при их наличии
@@ -127,7 +108,6 @@ if (isset($_POST) && !empty($_POST)) {
                     $dataBitrix24[strtoupper($key)] = $utm; 
                 }
             }
-        $lead->createLead($dataBitrix24); 
         
      /*=============================================================================*/
      //Template for mail

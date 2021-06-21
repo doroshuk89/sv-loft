@@ -5,6 +5,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
+
+<!-- Google Tag Manager -->
+                <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-5MC2J69');</script>
+<!-- End Google Tag Manager -->
+
+<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -26,7 +36,12 @@
 <!--===============================================================================================-->
 </head>
 <body id="header" class="animsition">
-
+            
+    <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MC2J69"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) 
+            
 	<!-- Header -->
 	<header>
 		<!-- Header desktop -->
@@ -1410,12 +1425,5 @@
         <script  src="vendor/lightgallery/js/lg-thumbnail.min.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.min.js"></script>
-        <!--<script src="//code-ya.jivosite.com/widget/IZ8GFjW5Ok" async></script> -->
-    <script>
-        (function(w,d,u){
-                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
-                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-        })(window,document,'https://cdn-ru.bitrix24.ru/b16756178/crm/site_button/loader_2_bclsbm.js');
-    </script>
 </body>
 </html>

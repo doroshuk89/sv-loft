@@ -13,7 +13,7 @@
     try{
         $data = $gallery->getDataPhotoJsonFile($pathFIle, $fileNameJson, 'object');
     } 
-    catch (\FileException $e) {
+    catch (\CustomException\FileException $e) {
         echo 'Ошибка: ',  $e->getMessage(), "\n";
         exit;
     }
