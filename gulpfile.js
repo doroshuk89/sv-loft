@@ -89,7 +89,7 @@ gulp.task ("watcher", function () {
 
 //Для удаления папки dist перед сборкой
 gulp.task("del", function () {
-   return del.sync('dist'); // Удаляем папку dist перед сборкой 
+   return del('dist'); // Удаляем папку dist перед сборкой 
 });
 
 //Очистка кеша
@@ -98,6 +98,6 @@ gulp.task('clear', function (callback) {
 })
 
 gulp.task("default", gulp.parallel("copy", "htaccess", "vendors", "images", "images_projects", "fonts","css","scripts", "watcher"));
-gulp.task("build", gulp.parallel("del", "clear", "copy", "htaccess", "vendors", "images", "images_projects", "fonts","css","scripts"));
+gulp.task("build", gulp.series("del", "clear", "copy", "htaccess", "vendors", "images", "images_projects", "fonts","css","scripts"));
 
 
