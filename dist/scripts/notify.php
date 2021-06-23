@@ -1,5 +1,4 @@
 <?php
-
 //Название домена
 $host = $_SERVER["HTTP_HOST"];
 //Корень сайта
@@ -25,6 +24,7 @@ $option = json_decode($config, true);
 function clear_str($str) {
     return strip_tags(trim($str));
 }
+
 //функция передачи json ответа в js
 function response ($message, $status) {
     echo json_encode([
@@ -90,9 +90,7 @@ if (isset($_POST) && !empty($_POST)) {
             $comments = "Новый запрос с сайта";
         }
         // =====================================
-        
-        
-        
+
         //Добавляем UTM метки при их наличии
         if(isset($_POST['UTM'])) {
                 $utms = json_decode($_POST['UTM'], true);
@@ -143,12 +141,8 @@ if (isset($_POST) && !empty($_POST)) {
      $mail->MsgHTML($body); // Текст сообщения
 
      if ($mail->send()) {
-         
-         
-        
          response("Ожидайте. Мы свяжемся с вами!", true);
          emailLog($_POST, $emailLog, 'SUCCESS TRANSFER');
-
      }else {
          response('Ошибка! Попробуйте позже', false);
          emailLog($_POST, $emailLog, 'ERROR TRANSFER');
@@ -161,7 +155,7 @@ catch(ValidationException $ex){
         response("Проверьте правильность введенных данных", false);
      return FALSE;
  }
-catch (PhpMailerExceptions $e) {
+catch (\PhpMailerExceptions $e) {
         //Запись в лог Ошибки
         error_log("Ошибка PhpMailer передачи почты - ". $e->errorMessage(), 0);
         response("Ошибка передачи. Попробуйте позже!", false);
