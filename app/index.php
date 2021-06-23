@@ -85,13 +85,8 @@
 
 					<!-- Social -->
 					<div class="social flex-w flex-l-m p-r-20">
-
-							<a href="#" class="fs-15"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							<a href="#" class="fs-15"><i class="fa fa-vk m-l-18" aria-hidden="true"></i></a>
-							<a href="#" class="fs-15"><i class="fa fa-telegram m-l-18" aria-hidden="true"></i></a>
-							<a href="#" class="fs-15"><i class="fa fa-external-link m-l-18" aria-hidden="true"></i></a>
-
-
+							<a href="https://www.instagram.com/sv_kupe/" target="_blank" class="fs-15"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							<a href="https://vk.com/sv_kupe" target="_blank" class="fs-15"><i class="fa fa-vk m-l-18" aria-hidden="true"></i></a>
 						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
 					</div>
 				</div>
@@ -1291,10 +1286,10 @@
 			<div class="container">
 				<div class="flex-sb-m flex-w p-t-22 p-b-22">
 					<div class="p-t-5 p-b-5">
-						<a href="#" class="fs-15 c-white"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-						<a href="#" class="fs-15 c-white"><i class="fa fa-vk m-l-18" aria-hidden="true"></i></a>
-						<a href="#" class="fs-15 c-white"><i class="fa fa-telegram m-l-18" aria-hidden="true"></i></a>
-						<a href="#" class="fs-15 c-white"><i class="fa fa-external-link m-l-18" aria-hidden="true"></i></a>
+        		
+                                            <a href="https://www.instagram.com/sv_kupe/" target="_blank" class="fs-15 c-white"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="https://vk.com/sv_kupe" target="_blank" class="fs-15 c-white"><i class="fa fa-vk m-l-18" aria-hidden="true"></i></a>
+						
 					</div>
 
 					<div class="txt17 p-r-20 p-t-5 p-b-5">

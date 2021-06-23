@@ -5,6 +5,7 @@ $host = $_SERVER["HTTP_HOST"];
 $root = rtrim($_SERVER['DOCUMENT_ROOT']);
 // Лог для почты
 $emailLog = $root.'/log/email-transfer.log';
+$url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $host;
 
 ini_set('display_errors', 0);
 ini_set('log_errors', 1);
@@ -110,7 +111,7 @@ if (isset($_POST) && !empty($_POST)) {
              $body .= "<table style='width:600px; border-spacing: 10px; border: 1px solid silver; padding: 10px; font-size:20px;'><tr><td>";
              $body .= "<tr style='height: 150px;'><td valign='top' style='padding:0' bgcolor='#ffffff'>
                 <a href='#'>
-                        <img src='http://p29820n8.beget.tech/loft/images/email-header-loft.jpg' alt='' border='0' style='display: block; border-radius: 4px;' />
+                        <img src='{$url}/images/email-header-loft.jpg' alt='' border='0' style='display: block; border-radius: 4px;' />
                 </a>
                 </td></tr>";
              $body .= "<tr><td ><h3 style='text-align:center; border-bottom: 1px solid silver; color:#d61c22;'>".$title."</h3></td></tr>";
