@@ -134,7 +134,7 @@
                                 <a class="contact-link" href ="tel:+375297925779">+375(29)792-57-79</a>
                             </div>
                             <div class="p-t-10">
-                                <a class="contact-link" href ="mailto:loft@sv-kupe.by">loft@sv-kupe.by</a>
+                                <a class="contact-link" href ="mailto:info@sv-kupe.by">info@sv-kupe.by</a>
                             </div>
                             
                             
@@ -1183,7 +1183,7 @@
 
 						<li class="txt14 m-b-14">
 							<i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
-							loft@sv-kupe.by
+							info@sv-kupe.by
 						</li>
 					</ul>
 
