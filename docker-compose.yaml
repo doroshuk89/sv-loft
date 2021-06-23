@@ -3,11 +3,11 @@ version: '3.1'
 services:
 
   web-server:
-    image: php:8.0.2-apache
+    image: php:5.4.34-apache
     restart: always
-    container_name: loft-sv    
+    container_name: loft-sv-old    
     ports:
-      - 8120:80
+      - 8121:80
     volumes:
       - ./dist/:/var/www/html
     

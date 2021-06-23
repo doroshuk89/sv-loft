@@ -2,10 +2,9 @@
     "name": "atlas/loft",
     "description": "LandingPage Loft style for Mebel",
     "require": {
-        "respect/validation": "^2.0",
-        "phpmailer/phpmailer": "^6.1",
-        "atlas89/telegram-notify-order": "^1.0",
-        "atlas89/bitrix-createleads-api": "^1.0"
+        "respect/validation": "1.",
+        "phpmailer/phpmailer": "v5.2.22"
+        
     },
     "authors": [
         {

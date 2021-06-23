@@ -3,8 +3,8 @@
 Contributions to Respect\Validation are always welcome. You make our lives
 easier by sending us your contributions through [pull requests][].
 
-Pull requests for bug fixes must be based on the oldest stable version's branch
-whereas pull requests for new features must be based on the `master` branch.
+Pull requests for bug fixes must be based on the current stable branch whereas
+pull requests for new features must be based on `master`.
 
 Due to time constraints, we are not always able to respond as quickly as we
 would like. Please do not take delays personal and feel free to remind us here,
@@ -15,14 +15,9 @@ about [PHP-FIG][]'s standards and basic unit testing, but we're sure you can
 learn that just by looking at other rules. Pick the simple ones like `ArrayType`
 to begin.
 
-Before writing anything, feature or bug fix:
-- Check if there is already an issue related to it (opened or closed) and if
-  someone is already working on that;
-    - If there is not, [open an issue][] and notify everybody that you're going
-      to work on that;
-    - If there is, create a comment to notify everybody that you're going to
-      work on that.
-- Make sure that what you need is not done yet
+Before writing anything, make sure there is no validator that already does what
+you need. Also, it would be awesome if you [open an issue][] before starting,
+so if anyone has the same idea the guy will see that you're already doing that.
 
 ## Adding a new validator
 
@@ -32,18 +27,13 @@ A common validator (rule) on Respect\Validation is composed of three classes:
   * `library/Exceptions/YourRuleNameException.php`: the exception thrown by the rule
   * `tests/unit/Rules/YourRuleNameTest.php`: tests for the rule
 
-The classes are pretty straightforward. In the sample below, we're going to
-create a validator that validates if a string is equal to "Hello World".
-
-- Classes should be `final` unless they are used in a different scope;
-- Properties should be `private` unless they are used in a different scope;
-- Classes should use strict typing;
-- Some docblocks are required.
+Classes are pretty straightforward. In the sample below, we're going to create a
+validator that validates if a string is equal "Hello World".
 
 ### Creating the rule
 
-The rule itself needs to implement the `Validatable` interface but, it is
-convenient to just extend the `AbstractRule` class.
+The rule itself needs to implement the `Validatable` interface.
+Also, it is convenient to extend the `AbstractRule`.
 Doing that, you'll only need to declare one method: `validate($input)`.
 This method must return `true` or `false`.
 
@@ -58,30 +48,23 @@ and will natively have support for chaining and everything else.
  *
  * (c) Alexandre Gomes Gaigalas <alexandre@gaigalas.net>
  *
- * For the full copyright and license information, please view the LICENSE file
- * that was distributed with this source code.
+ * For the full copyright and license information, please view the "LICENSE.md"
+ * file that was distributed with this source code.
  */
-
-declare(strict_types=1);
 
 namespace Respect\Validation\Rules;
 
-/**
- * Explain in one sentence what this rule does.
- *
- * @author Your Name <youremail@yourdomain.tld>
- */
-final class HelloWorld extends AbstractRule
+class HelloWorld extends AbstractRule
 {
-    /**
-     * {@inheritDoc}
-     */
-    public function validate($input): bool
+    public function validate($input)
     {
         return $input === 'Hello World';
     }
 }
 ```
+
+Docblocks with `@param`, `@return`, `{@inheritdoc}`, `@author` and other
+annotations for classes and methods are encouraged but not required.
 
 ### Creating the rule exception
 
@@ -98,23 +81,15 @@ library will show the appropriate message.
  *
  * (c) Alexandre Gomes Gaigalas <alexandre@gaigalas.net>
  *
- * For the full copyright and license information, please view the LICENSE file
- * that was distributed with this source code.
+ * For the full copyright and license information, please view the "LICENSE.md"
+ * file that was distributed with this source code.
  */
-
-declare(strict_types=1);
 
 namespace Respect\Validation\Exceptions;
 
-/**
- * @author Your Name <youremail@yourdomain.tld>
- */
-final class HelloWorldException extends ValidationException
+class HelloWorldException extends ValidationException
 {
-    /**
-     * {@inheritDoc}
-     */
-    protected $defaultTemplates = [
+    public static $defaultTemplates = [
         self::MODE_DEFAULT => [
             self::STANDARD => '{{name}} must be a Hello World',
         ],
@@ -129,10 +104,10 @@ final class HelloWorldException extends ValidationException
 
 Finally, we need to test if everything is running smooth. We have `RuleTestCase`
 that allows us to make easier to test rules, but you fell free to use the
-`PHPUnit\Framework\TestCase` if you want or you need it's necessary.
+`PHPUnit_Framework_TestCase` if you want or you need it's necessary.
 
-The `RuleTestCase` extends PHPUnit's `PHPUnit\Framework\TestCase` class, so you
-are able to use any methods of it. By extending `RuleTestCase` you should
+The `RuleTestCase` extends PHPUnit's `PHPUnit_Framework_TestCase` class, so you
+are able to use any method of them. By extending `RuleTestCase` you should
 implement two methods that should return a [data provider][] with the rule as
 first item of the arrays:
 
@@ -147,29 +122,19 @@ first item of the arrays:
  *
  * (c) Alexandre Gomes Gaigalas <alexandre@gaigalas.net>
  *
- * For the full copyright and license information, please view the LICENSE file
- * that was distributed with this source code.
+ * For the full copyright and license information, please view the "LICENSE.md"
+ * file that was distributed with this source code.
  */
-
-declare(strict_types=1);
 
 namespace Respect\Validation\Rules;
 
-use Respect\Validation\Test\RuleTestCase;
-
 /**
- * @group rule
- *
- * @covers \Respect\Validation\Rules\HelloWorld
- *
- * @author Your Name <youremail@yourdomain.tld>
+ * @group  rule
+ * @covers Respect\Validation\Rules\HelloWorld
  */
-final class HelloWorldTest extends RuleTestCase
+class HelloWorldTest extends RuleTestCase
 {
-    /**
-     * {@inheritDoc}
-     */
-    public function providerForValidInput(): array
+    public function providerForValidInput()
     {
         $rule = new HelloWorld();
 
@@ -178,10 +143,7 @@ final class HelloWorldTest extends RuleTestCase
         ];
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    public function providerForInvalidInput(): array
+    public function providerForInvalidInput()
     {
         $rule = new HelloWorld();
 
@@ -206,12 +168,13 @@ but if you really want to help us, you can follow the example of [ArrayType][] b
 - Writing a documentation for your new rule;
 - Creating integration tests with PHPT.
 
-As we already said, none of them are required but you will help us a lot.
+As I already said, none of them are required but you will help us a lot.
 
 ## Documentation
 
-Our docs at https://respect-validation.readthedocs.io are generated from our
-Markdown files. Add your brand new rule and it should be soon available.
+Our docs at http://respect.github.io/Validation are generated from our Markdown
+files using [Couscous][]. Add your brand new rule there and
+everything will be updated as soon as possible.
 
 ## Running Tests
 
@@ -227,7 +190,7 @@ $ vendor/bin/phpunit
 or
 
 ```sh
-$ composer phpunit
+$ composer test
 ```
 
 ### Windows
@@ -240,7 +203,7 @@ You can test the project using the commands:
 or
 
 ```sh
-> composer phpunit
+> composer test
 ```
 
 No test should fail.
@@ -248,9 +211,37 @@ No test should fail.
 You can tweak the PHPUnit's settings by copying `phpunit.xml.dist` to `phpunit.xml`
 and changing it according to your needs.
 
+## Coding style and standards
+
+We follow the [PSR-2][] coding style and [PSR-4][] autoloading standard.
+
+There are some preferences regarding code style which you can easily adhere to
+by using [php-cs-fixer][].
+
+This will format all PHP files consistently using the preferences of this
+project.
+
+```sh
+$ vendor/bin/php-cs-fixer fix
+```
+
+***
+See also:
+
+- [Feature Guide](docs/README.md)
+- [Installation](docs/INSTALL.md)
+- [License](LICENSE.md)
+- [Validators](docs/VALIDATORS.md)
+- [Changelog](CHANGELOG.md)
+
+
 [ArrayType]: https://github.com/Respect/Validation/commit/f08a1fa
+[Couscous]: http://couscous.io/ "Couscous"
 [data provider]: https://phpunit.de/manual/current/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.data-providers "PHPUnit Data Providers"
 [open an issue]: http://github.com/Respect/Validation/issues
+[php-cs-fixer]: https://github.com/FriendsOfPHP/PHP-CS-Fixer "PHP Coding Standard Fixer"
 [PHP-FIG]: http://www.php-fig.org "PHP Framework Interop Group"
-[project documentation]: https://respect-validation.readthedocs.io/ "Respect\Validation documentation"
+[project documentation]: http://respect.github.io/Validation "Respect\Validation documentation"
+[PSR-2]: http://www.php-fig.org/psr/psr-2 "PHP Standard Recommendation: Coding Style Guide"
+[PSR-4]: http://www.php-fig.org/psr/psr-4 "PHP Standard Recommendation: Autoloader"
 [pull requests]: http://help.github.com/pull-requests "GitHub pull requests"

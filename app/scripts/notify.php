@@ -18,12 +18,7 @@ use \Respect\Validation\Validator;
 use \Respect\Validation\Exceptions\ValidationException;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception as PhpMailerExceptions;
-use \atlasTelegramNotify\NotifyTelegram;
-
-//Оповещение в телеграмм 
-$token_bot = "1785299982:AAEoQxTtZeFtfFENxLTeAu1t5O-Lrz_hYe4";
-$chad_id = "-453374119";
-$client = new NotifyTelegram ($token_bot, $chad_id);
+    
 
 //File Settings
 $config = file_get_contents("mail-config.json");
@@ -152,8 +147,7 @@ if (isset($_POST) && !empty($_POST)) {
 
      if ($mail->send()) {
          
-         //Оповещение в телеграмм
-         $client->sendMessages("{$host}\nЗапрос с сайта\nПроверьте почтовый ящик\n");
+         
         
          response("Ожидайте. Мы свяжемся с вами!", true);
          emailLog($_POST, $emailLog, 'SUCCESS TRANSFER');
