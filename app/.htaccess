@@ -2,3 +2,6 @@ RemoveHandler .html .htm
 AddType application/x-httpd-php .php .htm .html .phtml
 
 ErrorDocument 404 /404.php
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301] 
