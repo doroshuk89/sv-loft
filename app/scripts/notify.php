@@ -16,9 +16,6 @@ require_once $root.'/vendor/autoload.php';
 
 use \Respect\Validation\Validator;
 use \Respect\Validation\Exceptions\ValidationException;
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception as PhpMailerExceptions;
-    
 
 //File Settings
 $config = file_get_contents("mail-config.json");
@@ -129,7 +126,7 @@ if (isset($_POST) && !empty($_POST)) {
              $body .= "</body></html>";
      /*=============================================================================*/
 
-     $mail = new PHPMailer(true); // Создаем экземпляр класса PHPMailer
+     $mail = new \PHPMailer(true); // Создаем экземпляр класса PHPMailer
      $mail->IsSMTP(); // Указываем режим работы с SMTP сервером
      $mail->Host       = $option['host'];  // Host SMTP сервера: ip или доменное имя
      $mail->SMTPDebug  = $option['debug'];  // Уровень журнализации работы SMTP клиента PHPMailer

@@ -4,7 +4,6 @@
     "require": {
         "respect/validation": "1.",
         "phpmailer/phpmailer": "v5.2.22"
-        
     },
     "authors": [
         {
