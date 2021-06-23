@@ -85,13 +85,8 @@
 
 					<!-- Social -->
 					<div class="social flex-w flex-l-m p-r-20">
-
-							<a href="#" class="fs-15"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							<a href="#" class="fs-15"><i class="fa fa-vk m-l-18" aria-hidden="true"></i></a>
-							<a href="#" class="fs-15"><i class="fa fa-telegram m-l-18" aria-hidden="true"></i></a>
-							<a href="#" class="fs-15"><i class="fa fa-external-link m-l-18" aria-hidden="true"></i></a>
-
-
+							<a href="https://www.instagram.com/sv_kupe/" target="_blank" class="fs-15"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							<a href="https://vk.com/sv_kupe" target="_blank" class="fs-15"><i class="fa fa-vk m-l-18" aria-hidden="true"></i></a>
 						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
 					</div>
 				</div>
@@ -139,7 +134,7 @@
                                 <a class="contact-link" href ="tel:+375297925779">+375(29)792-57-79</a>
                             </div>
                             <div class="p-t-10">
-                                <a class="contact-link" href ="mailto:loft@sv-kupe.by">loft@sv-kupe.by</a>
+                                <a class="contact-link" href ="mailto:info@sv-kupe.by">info@sv-kupe.by</a>
                             </div>
                             
                             
@@ -1188,7 +1183,7 @@
 
 						<li class="txt14 m-b-14">
 							<i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
-							loft@sv-kupe.by
+							info@sv-kupe.by
 						</li>
 					</ul>
 
@@ -1291,11 +1286,9 @@
 			<div class="container">
 				<div class="flex-sb-m flex-w p-t-22 p-b-22">
 					<div class="p-t-5 p-b-5">
-						<a href="#" class="fs-15 c-white"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-						<a href="#" class="fs-15 c-white"><i class="fa fa-vk m-l-18" aria-hidden="true"></i></a>
-						<a href="#" class="fs-15 c-white"><i class="fa fa-telegram m-l-18" aria-hidden="true"></i></a>
-						<a href="#" class="fs-15 c-white"><i class="fa fa-external-link m-l-18" aria-hidden="true"></i></a>
-					</div>
+						<a href="https://www.instagram.com/sv_kupe/" target="_blank" class="fs-15 c-white"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="https://vk.com/sv_kupe" target="_blank" class="fs-15 c-white"><i class="fa fa-vk m-l-18" aria-hidden="true"></i></a>
+                                        </div>
 
 					<div class="txt17 p-r-20 p-t-5 p-b-5">
 						<span>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> atlas&Co. Все права защищены</span>
